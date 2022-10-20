@@ -1,0 +1,20 @@
+.skills{
+    padding-bottom: 127px;
+
+    &__title{
+        padding-top: 92px;
+        margin:0;
+        margin-bottom: 69px;
+    }
+
+    &__subtitle{
+        margin: 0;
+        text-align: center;
+        margin-bottom: 83px;
+    }
+
+    &__cards{
+        display: flex;
+        justify-content: space-between;
+    }
+}
