@@ -109,6 +109,46 @@ body, html {
   width: 100%;
 }
 
+.burger {
+  display: none;
+  position: relative;
+  top: 60px;
+  left: 5px;
+}
+.burger__line {
+  width: 50px;
+  height: 5px;
+  background-color: gray;
+  margin-bottom: 10px;
+  border-radius: 10%;
+}
+
+@media screen and (max-width: 450px) {
+  .header {
+    display: none;
+  }
+  .burger {
+    display: inline-block;
+  }
+  .main__links {
+    display: none;
+  }
+  .main__descrip {
+    display: flex;
+    flex-direction: column;
+  }
+  .main__title {
+    margin: 0 35px 15px;
+  }
+  .skills__cards {
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 70%;
+  }
+  .skills__card {
+    padding-bottom: 100px;
+  }
+}
 .about {
   background-color: #F6F6F6;
   padding-bottom: 97px;
@@ -125,7 +165,7 @@ body, html {
   padding-bottom: 127px;
 }
 .skills__title {
-  padding-top: 91px;
+  padding-top: 92px;
   margin: 0;
   margin-bottom: 69px;
 }

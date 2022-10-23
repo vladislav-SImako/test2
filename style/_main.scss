@@ -52,3 +52,64 @@
     }
 
 }
+
+.burger{
+    display: none;
+    position: relative;
+    top:60px;
+    left: 5px;
+    &__line{
+        width: 50px;
+        height: 5px;
+        background-color: gray;
+        margin-bottom: 10px;
+        border-radius: 10%;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .header{
+        display: none;
+    
+    }
+    .burger{
+        display: inline-block;
+    }
+
+    .main__links{
+        display: none;
+    }
+
+    .main__descrip{
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .main__title{
+        margin: 0 35px 15px;
+    }
+
+    .skills__cards{
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .skills__card{
+        padding-bottom: 100px;
+
+    }
+
+    // .burger:hover{
+    //     .nav{
+    //         display: flex;
+    //         flex-direction: column;
+    //     }
+
+    //     .burger{
+    //         display: none;
+    //     }
+    // }
+    
+}
